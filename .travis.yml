@@ -11,6 +11,7 @@ cache:
   - node_modules
 script:
 - npm run heroku-prebuild
+- npm run test
 deploy:
   provider: heroku
   skip_cleanup: true
