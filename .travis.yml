@@ -10,14 +10,14 @@ cache:
   directories:
   - node_modules
 script:
-  - npm run heroku-prebuild
-  - npm run test
-  - npm run lint
+- npm run heroku-prebuild
+- npm run test
+- npm run lint
 deploy:
   provider: heroku
   skip_cleanup: true
   api_key:
-    secure: FjHzEWNOmwx6jDymTrrFU4MEBytMjXTA3Qb5EM+dqIuPDtKi83ZyjrqVChs7YS2HQ3yCtvYgYz6/8ukQKmUqGQseUXHuFfzDWNpIczAS6vAeLi0JOqU/uVFUrg7pbOH/hfM9juIyF3RYB1BEkOnT3o3H9r+CGPpLZAMZ+HhPioj9c3agAEmY0P+2yGnda9OV9C435tcuLdfMk397UmdLDV3cRYQGf7kYyw77BGY3ZtAq+MnipMZTEUfjEJnyhG2RyY95YhYafH7xqGYvNMEGN21d5owboRxUckjJkntprXuqrlVgkuZST7KlrQ27Ay+2BSeb/YVUJv+IQx/2305xjfUPUjEDu9Qcz8P4CNNifJ4wj8bUOgbgPbVKGJuDOxZ2XntJ4NJeR6J5ugv/+3ynN7wnKQnZw9tpPkBT8wCYgHmxRtnV62OHO5UpdSckXHLIIn9dtl+lqHynSIGMN1yVhX0efPRFEN52SHpKKYuZ1u+YAdDLOpwKWEsqGyCPEu0YfT9C6trvt556Z8quRv42m7W3eXMtUL8RpND40q8+t3VXhgSTY/Dg1U0L+oMbXK7hmkaUpcK/6t193hDRx5f5HxEVrXXGj+mlt8vZqGl0UzlydINSKBogDhyVBDyi1VC4Ig+FouKe6Bjv+VlUJsy2CIGyPd8BK/4kggPXyn04p7k=
+    secure: HwAsNiYbzD/kJ/cwXD+lvJTxnEuBAAi56pON6FHebDdKhTxlYOE27ZNZUOQ3gDG0tNIUywkXgerAAT2qtA3kQutZeSt+ehc/89nFfzRvQ6Aw8t1gcGp7j+zZHQHM9SmKxWXIRP+/gzQZGquK5sEnHMCOAdju+XH/qq+iQ2WsFA+XknnWsyUD4TcUfGsZTOLJgcOQiwFYEwX1AKL92PBV+q2ElQjTYMpzkJfXIpGHa4RBKhuXzMl5wAeMtclDn7zNbpU/Cvm9vyL3izxI/7QPw9NKDLRYiV8+5CtpL6ZrKuhWYjEOVuFngzlax2pikuiRf1rRb6Ir07x51dmEnKuV6HueL/NZxa8c9v6Q/pumkUzR3WdZly9IX+FFsH5tggAZpULppRlePDi5a8JlTsfZmigNGS3TScSyyFgSuyEEdXpjBOf2hsgxnnQIkHHuLKm+f7QutDg7toUWoAoAMqYV4oP8yQ/gCg1JTSyxmhTpcUVUWEw8TfX1wKGC18sB2+IdOVRCRYLKWZpo/YmGMmYk4iiWPJ9yzI+f3V+g11nDxGtV7tFtgE0Qmq2epwl3/PyaKxZ7VoB2zUXjpTHi6TXba+Nyt/B3Ak+QyL4RUp1OrPrac5SwkIqmKZey/fkOfP8XgfxN7mnRtCUAAMEiySj4XXaRrZTqnvKtUWgItihR17A=
   app: nextfantasy
   on:
     repo: andydurette/nextfantasy
