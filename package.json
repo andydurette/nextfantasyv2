@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "heroku-prebuild": "echo This shows presetup is occuring"
   },
   "dependencies": {
     "next": "9.4.4",
