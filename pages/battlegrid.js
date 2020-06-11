@@ -12,7 +12,7 @@ const Battlegrid = () => {
 			
 			<section id="battlegrid">
 				<Navbar/>
-      	<iframe id="battlegrid-iframe" src="https://dnd-tabletop.herokuapp.com/"></iframe>
+				<iframe id="battlegrid-iframe" src="https://dnd-tabletop.herokuapp.com/"></iframe>
 			</section>
 		</React.Fragment>
 	);

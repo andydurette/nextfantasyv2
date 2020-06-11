@@ -12,7 +12,7 @@ const About = () => {
 			<section id="about">
 				<Navbar />
 			</section>
-			</React.Fragment>
+		</React.Fragment>
 	);
 };
 

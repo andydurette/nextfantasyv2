@@ -10,8 +10,9 @@ cache:
   directories:
   - node_modules
 script:
-- npm run heroku-prebuild
-- npm run test
+  - npm run heroku-prebuild
+  - npm run test
+  - npm run lint
 deploy:
   provider: heroku
   skip_cleanup: true
