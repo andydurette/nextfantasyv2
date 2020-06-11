@@ -11,8 +11,8 @@ const Home = () => {
 			</Head>
 			<section id="homepage">
 				<Navbar />
-				<div id="homepage-content">
-					<h1>Wecolme to the world of Demian Arata</h1>
+				<div id="homepage-content" >
+					<h1 data-testid="index-text">Wecolme to the world of Demian Arata</h1>
 				</div>
 			</section>
 		</React.Fragment>
