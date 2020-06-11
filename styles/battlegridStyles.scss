@@ -1,0 +1,12 @@
+#battlegrid{
+display: flex;
+flex-direction: column;
+}
+
+#battlegrid-iframe{
+  overflow: hidden; 
+  width: 100vw;
+  height: 100vh;
+  background-color:#f4f4f4;
+  overflow:hidden;
+}

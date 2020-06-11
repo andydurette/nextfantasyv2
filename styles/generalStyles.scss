@@ -1,0 +1,26 @@
+html {
+  background: rgb(40, 44, 52);
+}
+
+html, body, #mainContainer {
+  height:100%;
+  min-height:100%;
+}
+
+#__next{
+  height:100%;
+  min-height:100%;
+ > div{
+    height:100%;
+    min-height:100%;
+   > div{
+      height:100%;
+      min-height:100%;
+    }
+  }
+}
+
+#mainContainer section{
+  height:100%;
+  min-height:100%;
+}

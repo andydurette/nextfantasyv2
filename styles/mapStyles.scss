@@ -1,0 +1,22 @@
+#map-container{
+  height:100%;
+  width:100%;
+  max-width:893px; 
+  max-height:680px;
+  margin:0 auto;
+  #c-map{
+    #Aposia, #Sledge, #Krogsland, #Inharice, #Dragard, #Hablo, #Ourirus, #Orf {
+      transform: translate(0, 0);
+      transition: .7s;
+    }
+
+    #Aposia:hover, #Sledge:hover, #Krogsland:hover, #Inharice:hover, #Dragard:hover, #Hablo:hover, #Ourirus:hover, #Orf:hover{
+      cursor:pointer;
+      transform: translate(0, -10px);
+    }
+  }
+  .untargetable{
+    user-select: none;
+    pointer-events: none;
+  }
+}
