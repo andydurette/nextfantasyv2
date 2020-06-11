@@ -11,6 +11,9 @@ const About = () => {
 			</Head>
 			<section id="about">
 				<Navbar />
+				<div id="homepage-content" >
+					<h1 data-testid="index-text">All about Demian Arata</h1>
+				</div>
 			</section>
 		</React.Fragment>
 	);
