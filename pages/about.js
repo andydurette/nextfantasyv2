@@ -10,7 +10,7 @@ const About = () => {
 			</Head>
 			<section id="about" >
 				<div id="homepage-content" >
-					<h1 data-testid="index-text" data-testid="about-text">All about Demian Arata</h1>
+					<h1 data-testid="about-text">All about Demian Arata</h1>
 				</div>
 			</section>
 		</React.Fragment>
