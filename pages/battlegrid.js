@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 
 const Battlegrid = () => {
 
@@ -11,7 +10,6 @@ const Battlegrid = () => {
 			</Head>
 			
 			<section id="battlegrid">
-				<Navbar/>
 				<iframe id="battlegrid-iframe" src="https://dnd-tabletop.herokuapp.com/"></iframe>
 			</section>
 		</React.Fragment>

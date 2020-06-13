@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 
 const About = () => {
 
@@ -9,10 +8,9 @@ const About = () => {
 				<title>About</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<section id="about">
-				<Navbar />
+			<section id="about" >
 				<div id="homepage-content" >
-					<h1 data-testid="index-text">All about Demian Arata</h1>
+					<h1 data-testid="index-text" data-testid="about-text">All about Demian Arata</h1>
 				</div>
 			</section>
 		</React.Fragment>

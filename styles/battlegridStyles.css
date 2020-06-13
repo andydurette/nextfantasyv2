@@ -1,0 +1,18 @@
+#battlegrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#battlegrid-iframe {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+/*# sourceMappingURL=battlegridStyles.css.map */

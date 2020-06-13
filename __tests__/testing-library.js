@@ -8,6 +8,6 @@ afterEach(cleanup);
 describe("Index page renders without error", () => {
 	test("Renders welcome text", () => {
 		const { getByTestId } = render(<AppProvider><Index /></AppProvider>);
-		expect( getByTestId("index-text")).toHaveTextContent("Wecolme to the world of Demian Arata");
+		expect( getByTestId("index-text")).toHaveTextContent("Welcome to the world ofDemian Arata");
 	});
 });

@@ -2,7 +2,6 @@ import React, {useContext} from "react";
 import { AppContext } from "../utils/AppContext";
 import Modal from "../components/Modal";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 
 function Map() {
 
@@ -33,7 +32,6 @@ function Map() {
 			</Head>
 			
 			<section id="map" >
-				<Navbar/>
 				<div id="map-container"> 
 					<svg id="c-map" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"  viewBox="0 0 893.538 680.397" enableBackground="new 0 0 893.538 680.397" xmlSpace="preserve">
 						<g id="Legend">

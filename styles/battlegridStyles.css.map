@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CACrB;;AAED,AAAA,kBAAkB,CAAA;EAChB,QAAQ,EAAE,MAAM;EAChB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAC,OAAO;EACxB,QAAQ,EAAC,MAAM;CAChB",
+    "sources": [
+        "battlegridStyles.scss"
+    ],
+    "names": [],
+    "file": "battlegridStyles.css"
+}

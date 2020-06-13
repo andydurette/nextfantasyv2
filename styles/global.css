@@ -1,0 +1,691 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #212121;
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#mainContainer {
+  min-height: calc(100vh - 176px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mainContainer > section {
+  min-height: 600px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #FFF;
+}
+
+@media all and (min-width: 768px) {
+  #mainContainer {
+    min-height: calc(100vh - 116px);
+  }
+}
+
+.button {
+  text-decoration: none;
+  font-size: .875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  color: #9191E9;
+  padding: 1rem 2rem;
+}
+
+.popup.activeModal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup.activeModal .popup-inner {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: .64s ease-in-out;
+  transition: .64s ease-in-out;
+}
+
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  max-height: 600px;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
+  -webkit-transition: .64s ease-in-out;
+  transition: .64s ease-in-out;
+}
+
+.popup__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto;
+}
+
+.popup__photo img {
+  width: auto;
+  height: 100%;
+}
+
+.popup__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 75%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.popup__text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+  text-transform: uppercase;
+  color: #0A0A0A;
+}
+
+.popup__text p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.5;
+}
+
+.popup__close {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: .875rem;
+  font-weight: 300;
+  border-radius: 100%;
+  background-color: #0A0A0A;
+  z-index: 4;
+  color: #fff;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 12px;
+  }
+  .popup__photo {
+    background-position: 5% center;
+  }
+}
+
+/* CSS Document */
+h3 {
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFF;
+}
+
+h3 a {
+  color: #FFF;
+}
+
+a {
+  color: #FFF;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 890px;
+}
+
+p {
+  text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #254441;
+  width: 100%;
+}
+
+#logo {
+  display: block;
+  padding: 0 30px;
+  padding-top: 8px;
+  float: left;
+  cursor: pointer;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
+  float: left;
+  background-color: #254441;
+}
+
+/* Styling the links */
+nav #logo a {
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 14px 20px;
+  color: #FFF;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+nav ul li ul li:hover {
+  background: #000000;
+}
+
+/* Background color change on Hover */
+nav #logo a:hover {
+  padding: 0;
+  background-color: transparent;
+}
+
+nav a:hover {
+  background-color: #000000;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+  display: none;
+  position: absolute;
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 60px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+  content: ' +';
+}
+
+li > a:only-child:after {
+  content: '';
+}
+
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width: 768px) {
+  #logo {
+    display: block;
+    padding: 0;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  nav {
+    margin: 0;
+  }
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color: #254441;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+  }
+  .toggle:hover {
+    background-color: #000000;
+  }
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #000000;
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: #212121;
+  }
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+}
+
+@media all and (max-width: 330px) {
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+}
+
+#map-container {
+  height: 100%;
+  width: 100%;
+  max-width: 893px;
+  max-height: 680px;
+  margin: 0 auto;
+}
+
+#map-container #c-map #Aposia, #map-container #c-map #Sledge, #map-container #c-map #Krogsland, #map-container #c-map #Inharice, #map-container #c-map #Dragard, #map-container #c-map #Hablo, #map-container #c-map #Ourirus, #map-container #c-map #Orf {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+#map-container #c-map #Aposia:hover, #map-container #c-map #Sledge:hover, #map-container #c-map #Krogsland:hover, #map-container #c-map #Inharice:hover, #map-container #c-map #Dragard:hover, #map-container #c-map #Hablo:hover, #map-container #c-map #Ourirus:hover, #map-container #c-map #Orf:hover {
+  cursor: pointer;
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+#map-container .untargetable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+#battlegrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#battlegrid-iframe {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+#homepage {
+  background-image: url("../public/content/images/montage.jpg");
+  /* The image used */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#homepage .page-content h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  #homepage .page-content h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+
+footer {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #254441;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer #copyright {
+  margin: 0;
+}
+
+footer #accreditation {
+  margin: 0;
+}
+
+@media all and (max-width: 330px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.country-box-left, .country-box-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.country-box-left .country-image-box, .country-box-right .country-image-box {
+  width: 35%;
+}
+
+.country-box-left .country-image-box img, .country-box-right .country-image-box img {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.country-box-left .country-text-box, .country-box-right .country-text-box {
+  width: 65%;
+}
+
+.item {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.item .image {
+  padding: 1em 2em;
+}
+
+.item .image > div {
+  position: relative;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.item .image > div::after {
+  content: '';
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #232b50;
+  position: absolute;
+  top: 4.75em;
+  left: 0;
+  z-index: -1;
+}
+
+.item .image img {
+  border-radius: 50%;
+  height: 9em;
+  border: 0.35em solid #5ed3bf;
+}
+
+.item .image span {
+  display: block;
+  clear: both;
+  padding: 0.25em 0;
+  margin: 0.5em 0;
+  background: #3b4262;
+}
+
+.item .details {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.item .details > div {
+  border: 1px solid #232b50;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin: 1em 0;
+}
+
+.item .details > div h1 {
+  color: #5ed3bf;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+  letter-spacing: 0.1em;
+}
+
+.item .details > div p {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}
+
+.item .details::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  border-left: 1px solid #232b50;
+  position: absolute;
+  top: 0;
+  left: -4.35em;
+  z-index: -1;
+}
+
+@media all and (min-width: 768px) {
+  .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .item .image > div img {
+    height: 5em;
+  }
+  .item .image > div::after {
+    top: 2.75em;
+    left: 2.5em;
+  }
+}
+/*# sourceMappingURL=global.css.map */
