@@ -16,7 +16,9 @@ function Country() {
 	let [kingdom/*, setKingdom*/] = kingdoms;
 
 	
-
+if(calledCountry === undefined){
+	return <p>Hi</p>
+}
 	
 	return (
 		<React.Fragment>
