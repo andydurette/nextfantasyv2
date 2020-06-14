@@ -3,12 +3,10 @@ import { AppProvider } from "../utils/AppContext";
 import Layout from "../components/Layout";
 import "../styles/global.scss";
 
-
 // This default export is required in a new `pages/_app.js` file.
 /*export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }*/
-
 
 // Setup to not require prop validation
 

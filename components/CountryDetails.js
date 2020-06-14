@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 
-const Country = (props) => {
+const CountryDetails = (props) => {
 	return(
 		<React.Fragment>
+			<h1 data-testid="index-text">The history and culture of {props.countryName}</h1>
 			<div className="item">
 				<div className="image">
 					<div>
@@ -14,7 +15,7 @@ const Country = (props) => {
 				</div>
 				<div className="details">
 					<div>
-						<h1>{props.historyHeading}</h1>
+						<h2>{props.historyHeading}</h2>
 						<p>{props.historyText}</p>
 					</div>
 				</div>
@@ -30,7 +31,7 @@ const Country = (props) => {
 				</div>
 				<div className="details">
 					<div>
-						<h1>{props.cultureHeading}</h1>
+						<h2>{props.cultureHeading}</h2>
 						<p>{props.cultureText}</p>
 					</div>
 				</div>
@@ -46,7 +47,7 @@ const Country = (props) => {
 				</div>
 				<div className="details">
 					<div>
-						<h1>{props.leaderHeading}</h1>
+						<h2>{props.leaderHeading}</h2>
 						<p>{props.leaderText}</p>
 					</div>
 				</div>
@@ -57,16 +58,17 @@ const Country = (props) => {
 	);
 };
 
-Country.propTypes = {
-	historyImage: PropTypes.string,
-	historyHeading: PropTypes.string,
-	historyText: PropTypes.string,
-	cultureImage: PropTypes.string,
-	cultureHeading: PropTypes.string,
-	cultureText: PropTypes.string,
-	leaderImage: PropTypes.string,
-	leaderHeading: PropTypes.string,
-	leaderText: PropTypes.string
+CountryDetails.propTypes = {
+	countryName: PropTypes.any,
+	historyImage: PropTypes.any,
+	historyHeading: PropTypes.any,
+	historyText: PropTypes.any,
+	cultureImage: PropTypes.any,
+	cultureHeading: PropTypes.any,
+	cultureText: PropTypes.any,
+	leaderImage: PropTypes.any,
+	leaderHeading: PropTypes.any,
+	leaderText: PropTypes.any
 };
 
-export default Country;
+export default CountryDetails;

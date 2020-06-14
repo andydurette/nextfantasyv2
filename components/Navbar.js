@@ -19,14 +19,14 @@ const Navbar2 = () => (
 					<a href="#">Countries</a>
 					<input type="checkbox" id="drop-1"/>
 					<ul>
-						<li><Link href="/countries/apoisa"><a>Apoisa</a></Link></li>
-						<li><a>Dragard</a></li>
-						<li><a>Hablo</a></li>
-						<li><a>Inharice</a></li>
-						<li><a>Krog&apos;s Land</a></li>
-						<li><a>Orf</a></li>
-						<li><a>Ourirus</a></li>
-						<li><a>Sledge</a></li>
+						<li><Link as="/countries/aposia" href="/countries/[country]"><a>Aposia</a></Link></li>
+						<li><Link as="/countries/dragard" href="/countries/[country]"><a>Dragard</a></Link></li>
+						<li><Link as="/countries/hablo" href="/countries/[country]"><a>Hablo</a></Link></li>
+						<li><Link as="/countries/inharice" href="/countries/[country]"><a>Inharice</a></Link></li>
+						<li><Link as="/countries/krogsland" href="/countries/[country]"><a>Krog&apos;s Land</a></Link></li>
+						<li><Link as="/countries/orf" href="/countries/[country]"><a>Orf</a></Link></li>
+						<li><Link as="/countries/ourirus" href="/countries/[country]"><a>Ourirus</a></Link></li>
+						<li><Link as="/countries/sledge" href="/countries/[country]"><a>Sledge</a></Link></li>
 					</ul> 
 				</li>
 				<li><Link href="/battlegrid"><a className="nav-link">Battlegrid</a></Link></li>

@@ -6,26 +6,3 @@
   height: 100%;
   flex: 1;
 }
-
-#homepage .page-content{
-  h1{
-    color:white;
-    font-size:30px;
-    text-align: center;
-    padding:20px;
-    margin-top: 40px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #homepage .page-content{
-    h1{
-      color:white;
-      font-size:40px;
-      line-height:50px;
-      text-align: center;
-      margin-top: 80px;
-    }
-  }
-
-}
