@@ -37,6 +37,19 @@ const Accreditation = () => {
 						<div className="accreditation">
 							<a href="https://www.deviantart.com/sephiroth-art" target="_blank" rel="noreferrer">sephiroth-art</a>
 						</div>
+						<div className="accreditation">
+							<a href="https://www.deviantart.com/t3hSpoon" target="_blank" rel="noreferrer">T3hSpoon</a>
+						</div>
+						<div className="accreditation">
+							<a href="https://www.deviantart.com/jayxon84" target="_blank" rel="noreferrer">JayXon84</a>
+						</div>
+						<div className="accreditation">
+							<a href="https://www.deviantart.com/arnieSpace" target="_blank" rel="noreferrer">arnieSpace</a>
+						</div>
+
+						
+
+
 
             
 

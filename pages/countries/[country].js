@@ -15,10 +15,13 @@ function Country() {
 	const {kingdoms} = useContext(AppContext);
 	let [kingdom/*, setKingdom*/] = kingdoms;
 
-	
-if(calledCountry === undefined){
-	return <p>Hi</p>
-}
+	//Not the most seo friendly solution but I am just loading from my context not a database
+	//getInitialProps method would rectify the seo however than I also need to setup a server
+	//or mock server to grab data I have just stored in context for this small project.	
+
+	if(calledCountry === undefined){
+		return <p>Loading</p>;
+	}
 	
 	return (
 		<React.Fragment>

@@ -1,4 +1,12 @@
 #map-page{
+  background-image: url("../public/content/images/montage-map.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+#map-page{
   flex: 1 1;
   display: flex;
   h1{
@@ -21,7 +29,7 @@
     height: 100%;
 
     > #c-map{
-      max-height: 500px;
+      max-height: 520px;
       max-width: 1100px;
       height:100%;
       width:100%;

@@ -10,11 +10,15 @@ body {
 	margin: 0;
 	padding: 0;
 	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  p{
+    font-size:1rem;
+	  line-height: 1.2rem;
+  }
 }
 
 #mainContainer{
-  min-height: calc(100vh - 176px);
+  min-height: calc(100vh - 158px);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -44,7 +48,7 @@ h1 {
 
 @media all and (min-width : 768px) {
   #mainContainer{
-    min-height: calc(100vh - 116px);
+    min-height: calc(100vh - 103px);
   }
 
   .page-content{

@@ -1,12 +1,31 @@
 #battlegrid{
-display: flex;
-flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  
 }
 
 #battlegrid-iframe{
+  display:none;
   overflow: hidden; 
-  width: 100vw;
-  height: 100vh;
+  max-width: 900;
+  width:100%;
+  height: 450px;
   background-color:#f4f4f4;
   overflow:hidden;
+  margin: 0 auto;
+}
+
+#battlegrid-message{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction:column;
+}
+
+@media all and (min-width : 700px) {
+  #battlegrid-iframe{
+    display:flex;
+  }
 }
