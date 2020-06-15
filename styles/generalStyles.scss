@@ -4,8 +4,6 @@
 
 body {
 	background: #212121;
-	font-size:22px;
-	line-height: 32px;
 	color: #ffffff;
 	margin: 0;
 	padding: 0;
@@ -18,6 +16,12 @@ body {
 }
 
 #mainContainer{
+  background-image: url("../public/content/images/montage-about.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100%;
+  flex: 1;
   min-height: calc(100vh - 158px);
   height: 100%;
   display: flex;
@@ -52,13 +56,13 @@ h1 {
   }
 
   .page-content{
-    max-width: 900px;
+    max-width: 700px;
   }
 }
 
 @media all and (min-width : 1025px) {
   .page-content{
-    max-width: 1100px;
+    max-width: 800px;
 
   }
 }

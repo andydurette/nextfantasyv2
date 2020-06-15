@@ -10,7 +10,10 @@ const Home = () => {
 			</Head>
 			<section id="homepage">
 				<div className="page-content" >
-					<h1 data-testid="index-text">Welcome to the world of<br/>Demian Arata</h1>
+					<h1 data-testid="index-text">Welcome to the world of Demian Arata</h1>
+					<p>A fantasy setting created for use with table top games like dungeons and dragons. Demain Arata is setting focusing on magical adventure with hints of political intrigue behind the scenes from countries which have their own unique culture, history and secrets which you can decide wheather or not to explore.</p>
+
+					<p>These facts and more about Demain Arata's fantasy setting can be found throughout the site.</p>
 				</div>
 			</section>
 		</React.Fragment>

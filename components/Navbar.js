@@ -26,7 +26,6 @@ const Navbar = () => {
 				<input type="checkbox" id="drop" />
 				<ul className="menu">
 					<li><Link href="/"><a className="nav-link">Home</a></Link></li>
-					<li><Link href="/about"><a className="nav-link">About</a></Link></li>
 					<li><Link href="/map"><a className="nav-link">Map</a></Link></li>
 					<li>	
 						<label htmlFor="drop-1" className="toggle">Countries +</label>

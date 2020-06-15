@@ -1,15 +1,13 @@
-
-#accreditation-page{
-  background-image: url("../public/content/images/montage-accreditation.jpg"); /* The image used */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-
 #accreditation-box{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
+  flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  .accreditation{
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

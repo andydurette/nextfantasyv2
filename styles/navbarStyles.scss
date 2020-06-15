@@ -1,5 +1,8 @@
 /* CSS Document */
-
+nav a{
+  font-size:22px;
+	line-height: 32px;
+}
 
 
 h3 {
@@ -241,6 +244,13 @@ li > a:only-child:after { content: ''; }
 
 	}
 
+}
+
+
+@media all and (min-width : 768px) {
+	nav ul {
+		margin-right:30px;
+	}
 }
 
 @media all and (max-width : 330px) {
