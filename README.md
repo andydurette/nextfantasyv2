@@ -8,6 +8,8 @@ In an attempt to learn NEXT.JS I decided for fun to build a Tabletop fantasy set
 * A Travis CI/CD pipeline.
 * Tests and Linting rules which would stop Travis from passing. 
 
+Live: https://nextfantasy.herokuapp.com/
+
 ![markdown-preview-image](public/content/images/markdown-preview-image.png)
 
 ### Features
