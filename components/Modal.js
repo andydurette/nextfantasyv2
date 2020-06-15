@@ -1,4 +1,5 @@
 import React, {useContext} from "react";
+import Link from "next/link";
 import { AppContext } from "../utils/AppContext";
 
 const Modal = () => {
@@ -12,14 +13,15 @@ const Modal = () => {
 
 
 	// Navigation mobile menu controller upon clicking the hamburger menu
-	const closeModal = (e) => {
-		e.preventDefault();
+	const closeModal = () => {
 		setModalSwitch( modalSwitch = false );
 	};
 
 	const modalImgStyle = {
 		backgroundImage: `url('./${activeKingdom.thumbnail}')`,
 	};
+
+
 
 	return (
 		<div id="popup" className={`popup ${(modalSwitch === false ? "" : "activeModal")}`}>
@@ -28,10 +30,11 @@ const Modal = () => {
 					{/*<img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80" alt="" />*/}
 				</div>
 				<div className="popup__text">
-					<h1>{activeKingdom.name}</h1>
+					<h2>{activeKingdom.name}</h2>
 					<p>{activeKingdom.description}</p>
+					<Link as={`/countries/${activeKingdom.linkname}`} href="/countries/[country]"><button className="learn__more" onClick={() => closeModal()} >Learn More</button></Link>
 				</div>
-				<button className="popup__close" onClick={(e) => closeModal(e) }>X</button>
+				<button className="popup__close" onClick={() => closeModal() }>X</button>
 			</div>
 		</div>
 	);

@@ -7,7 +7,6 @@
 }
 
 #battlegrid-iframe{
-  display:none;
   overflow: hidden; 
   max-width: 900;
   width:100%;
@@ -15,6 +14,8 @@
   background-color:#f4f4f4;
   overflow:hidden;
   margin: 0 auto;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 #battlegrid-message{
@@ -27,5 +28,7 @@
 @media all and (min-width : 700px) {
   #battlegrid-iframe{
     display:flex;
+    opacity: 1;
+    z-index: inherit;
   }
 }

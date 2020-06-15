@@ -2,7 +2,8 @@ export const kingdomData = {
 	"aposia": {
 		"id": 1,
 		"name":"Aposia",
-		"leader":"Lilith Lygrandis",
+		"linkname":"aposia",
+		"leader":"Lilith Aposia",
 		"historyHeading": "A history of aggression",
 		"historyText":"One of the largest Kingdoms kept only it check by it's powerful neighbouring kingdoms. Aposia has a storied history of ruthless expansion always with an eye to expand it's borders.",
 		"historyImage":"content/images/aposia.jpg",
@@ -25,6 +26,7 @@ export const kingdomData = {
 	"ourirus": {
 		"id": 2,
 		"name":"Ourirus",
+		"linkname":"ourirus",
 		"leader":"Chesiq Mauw",
 		"historyHeading": "A land of strict divide",
 		"historyText":"Ourirus was formed by wealthy land owners answering only to the crown and throughout it's history not much about this has changed. The wealthy continue to form law and decide most social change with little input from those of lower standing allowed despite the claims of the country itself.",
@@ -35,7 +37,7 @@ export const kingdomData = {
 		"leaderHeading": "King Chesiq Mauw",
 		"leaderText":"A more aloof ruler who has been around since his countries inception, as he lets his heads of state handle most matters regarding law he isn't seen much and many would wonder if he was more a figure head of the nation. Rumor holds only his known person might and the threat a civil war would bring to their borders has kept others in his circle from planning a coup.",
 		"leaderImage":"content/images/chesiq.jpg",
-		"description": "Ominous land ruled with laws that allow for regulated necromoncy, ruled by theit King Chesiq.",
+		"description": "Ourirus was formed by wealthy land owners answering only to the crown and throughout it's history not much about this has changed. The wealthy continue to form law and decide most social change with little input from those of lower standing allowed despite the claims of the country itself.",
 		"thumbnail": "content/images/king-chesiq-thumbnail.jpg",
 		"npc": [
 			[1,"content/img/logos/photoshop-icon.svg", "Lilith Lygrandis"],
@@ -47,6 +49,7 @@ export const kingdomData = {
 	"krogsland": {
 		"id": 3,
 		"name":"Krog's Land",
+		"linkname":"krogsland",
 		"leader":"Krog",
 		"historyHeading": "An Orc Society is born",
 		"historyText":"A land only a few years old recently formed from a war with all neikghbouring nations Krog the Orc leader wagged a war long enough and with such assult that he was able to push for a peace treaty officially giving him rights to the lands he conquered.",
@@ -57,7 +60,7 @@ export const kingdomData = {
 		"leaderHeading": "Krog",
 		"leaderText":"An unusually crafty and intelligent Orc who took all orc tribes under his banner.",
 		"leaderImage":"content/images/krog.jpg",
-		"description": "Land ruled by Krog, recognized as a kingdom after setting for countries settled with him for peace after he conquered the territory.",
+		"description": "A land only a few years old recently formed from a war with all neikghbouring nations Krog the Orc leader wagged a war long enough and with such assult that he was able to push for a peace treaty officially giving him rights to the lands he conquered.",
 		"thumbnail": "content/images/krog-thumbnail.jpg",
 		"npc": [
 			[1,"content/img/logos/photoshop-icon.svg", "Lilith Lygrandis"],
@@ -69,6 +72,7 @@ export const kingdomData = {
 	"sledge": {
 		"id": 4,
 		"name":"Sledge",
+		"linkname":"sledge",
 		"leader":"Orodruin Dormor",
 		"historyHeading": "Homeland to the Dwarves",
 		"historyText":"The ancestral homeland of the dwarven people held before recorded time, though there land has lost territory in past years to krog's land a growing threat to the realm at large.",
@@ -79,7 +83,7 @@ export const kingdomData = {
 		"leaderHeading": "Orodruin Dormor",
 		"leaderText":"A ruler by opinion by the dwarves though holding no offical office, few races hold as much community as the dwarves and Orodruin has claimed his place by respect and admiration alone for his fearlessness and selflessness.",
 		"leaderImage":"content/images/dormor.jpg",
-		"description": "Land ruled by Krog, recognized as a kingdom after setting for countries settled with him for peace after he conquered the territory.",
+		"description": "The ancestral homeland of the dwarven people held before recorded time, though there land has lost territory in past years to krog's land a growing threat to the realm at large.",
 		"thumbnail": "content/images/orodruin-dormor-thumbnail.jpg",
 		"npc": [
 			[1,"content/img/logos/photoshop-icon.svg", "Lilith Lygrandis"],
@@ -91,6 +95,7 @@ export const kingdomData = {
 	"hablo": {
 		"id": 5,
 		"name":"Hablo",
+		"linkname":"hablo",
 		"leader":"Chadly Goful",
 		"historyHeading": "A split society",
 		"historyText":"A land with a split community of gnomes and halfing after a good portion of both their homelands was lost to war's with krog's land. As neither were individually mighty enough to stand alone they joined and work together using their combiend wits to survive.",
@@ -101,7 +106,7 @@ export const kingdomData = {
 		"leaderHeading": "Chadly Goful",
 		"leaderText":"Current political head of Hablo one never knows what is going on in his head, know for playing mine games and only ever speaking in half truths.",
 		"leaderImage":"content/images/chadley.jpg",
-		"description": "Land ruled by Chadly a financial mogul of sorts, Hablo is a land almost entirely populated by gnomes and halflings.",
+		"description": "A land with a split community of gnomes and halfing after a good portion of both their homelands was lost to war's with krog's land. As neither were individually mighty enough to stand alone they joined and work together using their combiend wits to survive.",
 		"thumbnail": "content/images/chadley-goful-thumbnail.jpg",
 		"npc": [
 			[1,"content/img/logos/photoshop-icon.svg", "Lilith Lygrandis"],
@@ -113,9 +118,10 @@ export const kingdomData = {
 	"inharice": {
 		"id": 6,
 		"name":"Inharice",
+		"linkname":"inharice",
 		"leader":"Elsith",
 		"historyHeading": "A land In tune with nature",
-		"historyText":"Inharice is the ancetral home of the elves only ever given a border in response to those who wished to claim it's lands as it's own.",
+		"historyText":"Inharice is the ancestral home of the elves only ever given a border in response to those who wished to claim it's lands as it's own.",
 		"historyImage":"content/images/inharice.jpg",
 		"cultureHeading": "A true coexistance",
 		"cultureText":"Elves, the fey and all matter of creature live within Inharice's borders, and have an uneasy relationship with Aposia and it's use of necromancy.",
@@ -123,7 +129,7 @@ export const kingdomData = {
 		"leaderHeading": "Archdruid Elsith",
 		"leaderText":"Elected as the speaker of the land by the joint cooperation of the fae council and the elven population. He is the represntative for all desicions made on behalf of the country in regards to others.",
 		"leaderImage":"content/images/elsith.jpg",
-		"description": "Land ruled by Chadly a financial mogul of sorts, Hablo is a land almost entirely populated by gnomes and halflings.",
+		"description": "Inharice is the ancestral home of the elves only ever given a border in response to those who wished to claim it's lands as it's own.",
 		"thumbnail": "content/images/elsith-thumbnail.jpg",
 		"npc": [
 			[1,"content/img/logos/photoshop-icon.svg", "Lilith Lygrandis"],
@@ -135,9 +141,10 @@ export const kingdomData = {
 	"orf": {
 		"id":7,
 		"name":"Orf",
+		"linkname":"orf",
 		"leader":"Drawl",
 		"historyHeading": "A land of those who don't belong",
-		"historyText":"A land once used only as a hiding place for pirates and bandits to hide as more races needed to seek refuge it came into being a land of it's own seen as the last refuge of those who are unwanted or unneeded. ",
+		"historyText":"A land once used only as a hiding place for pirates and bandits to hide as more races needed to seek refuge it came into being a land of it's own seen as the last refuge of those who are unwanted or unneeded.",
 		"historyImage":"content/images/orf.jpg",
 		"cultureHeading": "A melting pot",
 		"cultureText":"Much to it's name it is the land of the orphaned either by exile or by prejudice the people get a long out of need and share their skills to get by.",
@@ -145,7 +152,7 @@ export const kingdomData = {
 		"leaderHeading": "Drawl",
 		"leaderText":"Only a land often treated as forgotten by the rest of the world could openly have a drow as a leader and drawl knows this intimately taking the position almost as if to laugh at the world he inhabits.",
 		"leaderImage":"content/images/drawl.jpg",
-		"description": "Land ruled by Chadly a financial mogul of sorts, Hablo is a land almost entirely populated by gnomes and halflings.",
+		"description": "A land once used only as a hiding place for pirates and bandits to hide as more races needed to seek refuge it came into being a land of it's own seen as the last refuge of those who are unwanted or unneeded.",
 		"thumbnail": "content/images/drawl-thumbnail.jpg",
 		"npc": [
 			[1,"content/img/logos/photoshop-icon.svg", "Lilith Lygrandis"],
@@ -157,6 +164,7 @@ export const kingdomData = {
 	"dragard": {
 		"id":7,
 		"name":"Dragard",
+		"linkname":"dragard",
 		"leader":"Dragard",
 		"historyHeading": "A story of dragons",
 		"historyText":"Long considered by birthplace of the dragons and where likely hides the vast amount of their riches and secrets. Much to scholars dismay few who are foolhardy enough to venture into dragard or the forests neighbouring it are heard from again.",
@@ -167,7 +175,7 @@ export const kingdomData = {
 		"leaderHeading": "Unclaimed Lands",
 		"leaderText":"At the worlds end lays dragard the last bastion against the kingdoms, ruled only by the primeval might of dragons and nothing more.",
 		"leaderImage":"content/images/dragard-dragon.jpg",
-		"description": "At the worlds end lays dragard the last bastion against the kingdoms ruled only by the primeval might of dragons.",
+		"description": "Long considered by birthplace of the dragons and where likely hides the vast amount of their riches and secrets. Much to scholars dismay few who are foolhardy enough to venture into dragard or the forests neighbouring it are heard from again.",
 		"thumbnail": "content/images/dragard-thumbnail.jpg",
 		"npc": [
 			[1,"content/img/logos/photoshop-icon.svg", "Lilith Lygrandis"],
