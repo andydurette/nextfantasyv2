@@ -15,8 +15,9 @@
   overflow:hidden;
   margin: 0 auto;
   opacity: 0.1;
-  z-index: -1;
+  z-index: 0;
   margin-bottom:30px;
+  pointer-events: none;
 }
 
 #battlegrid-message{
@@ -31,5 +32,6 @@
     display:flex;
     opacity: 1;
     z-index: inherit;
+    pointer-events: auto;
   }
 }
