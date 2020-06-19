@@ -15,6 +15,12 @@ function Country() {
 	const {kingdoms} = useContext(AppContext);
 	let [kingdom/*, setKingdom*/] = kingdoms;
 
+// Capitalize title
+	const capitalize = (s) => {
+		if (typeof s !== 'string') return ''
+		return s.charAt(0).toUpperCase() + s.slice(1)
+	}
+
 	//Not the most seo friendly solution but I am just loading from my context not a database
 	//getInitialProps method would rectify the seo however than I also need to setup a server
 	//or mock server to grab data I have just stored in context for this small project.	
@@ -26,7 +32,7 @@ function Country() {
 	return (
 		<React.Fragment>
 			<Head>
-				<title>{calledCountry.toUpperCase()}</title>
+				<title>{capitalize(calledCountry)}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<section id="about" className="country">
