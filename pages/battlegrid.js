@@ -5,7 +5,7 @@ const Battlegrid = () => {
 	return (
 		<React.Fragment>
 			<Head>
-				<title>About</title>
+				<title>Battlegrid</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
