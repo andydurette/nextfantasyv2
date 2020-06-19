@@ -26,7 +26,7 @@ function Country() {
 	return (
 		<React.Fragment>
 			<Head>
-				<title>{calledCountry}</title>
+				<title>{calledCountry.toUpperCase()}</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<section id="about" className="country">
