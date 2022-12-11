@@ -1,24 +1,24 @@
-language: node_js
-node_js:
-- stable
-npm: true
-notifications:
-  email:
-    on_success: never
-    on_failure: never
-cache:
-  directories:
-  - node_modules
-script:
-- npm run heroku-prebuild
-- npm run test
-- npm run lint
-deploy:
-  provider: heroku
-  skip_cleanup: true
-  api_key:
-    secure: HwAsNiYbzD/kJ/cwXD+lvJTxnEuBAAi56pON6FHebDdKhTxlYOE27ZNZUOQ3gDG0tNIUywkXgerAAT2qtA3kQutZeSt+ehc/89nFfzRvQ6Aw8t1gcGp7j+zZHQHM9SmKxWXIRP+/gzQZGquK5sEnHMCOAdju+XH/qq+iQ2WsFA+XknnWsyUD4TcUfGsZTOLJgcOQiwFYEwX1AKL92PBV+q2ElQjTYMpzkJfXIpGHa4RBKhuXzMl5wAeMtclDn7zNbpU/Cvm9vyL3izxI/7QPw9NKDLRYiV8+5CtpL6ZrKuhWYjEOVuFngzlax2pikuiRf1rRb6Ir07x51dmEnKuV6HueL/NZxa8c9v6Q/pumkUzR3WdZly9IX+FFsH5tggAZpULppRlePDi5a8JlTsfZmigNGS3TScSyyFgSuyEEdXpjBOf2hsgxnnQIkHHuLKm+f7QutDg7toUWoAoAMqYV4oP8yQ/gCg1JTSyxmhTpcUVUWEw8TfX1wKGC18sB2+IdOVRCRYLKWZpo/YmGMmYk4iiWPJ9yzI+f3V+g11nDxGtV7tFtgE0Qmq2epwl3/PyaKxZ7VoB2zUXjpTHi6TXba+Nyt/B3Ak+QyL4RUp1OrPrac5SwkIqmKZey/fkOfP8XgfxN7mnRtCUAAMEiySj4XXaRrZTqnvKtUWgItihR17A=
-  app: nextfantasy
-  on:
-    repo: andydurette/nextfantasy
-    branch: master
+# language: node_js
+# node_js:
+# - stable
+# npm: true
+# notifications:
+#   email:
+#     on_success: never
+#     on_failure: never
+# cache:
+#   directories:
+#   - node_modules
+# script:
+# - npm run heroku-prebuild
+# - npm run test
+# - npm run lint
+# deploy:
+#   provider: heroku
+#   skip_cleanup: true
+#   api_key:
+#     secure: HwAsNiYbzD/kJ/cwXD+lvJTxnEuBAAi56pON6FHebDdKhTxlYOE27ZNZUOQ3gDG0tNIUywkXgerAAT2qtA3kQutZeSt+ehc/89nFfzRvQ6Aw8t1gcGp7j+zZHQHM9SmKxWXIRP+/gzQZGquK5sEnHMCOAdju+XH/qq+iQ2WsFA+XknnWsyUD4TcUfGsZTOLJgcOQiwFYEwX1AKL92PBV+q2ElQjTYMpzkJfXIpGHa4RBKhuXzMl5wAeMtclDn7zNbpU/Cvm9vyL3izxI/7QPw9NKDLRYiV8+5CtpL6ZrKuhWYjEOVuFngzlax2pikuiRf1rRb6Ir07x51dmEnKuV6HueL/NZxa8c9v6Q/pumkUzR3WdZly9IX+FFsH5tggAZpULppRlePDi5a8JlTsfZmigNGS3TScSyyFgSuyEEdXpjBOf2hsgxnnQIkHHuLKm+f7QutDg7toUWoAoAMqYV4oP8yQ/gCg1JTSyxmhTpcUVUWEw8TfX1wKGC18sB2+IdOVRCRYLKWZpo/YmGMmYk4iiWPJ9yzI+f3V+g11nDxGtV7tFtgE0Qmq2epwl3/PyaKxZ7VoB2zUXjpTHi6TXba+Nyt/B3Ak+QyL4RUp1OrPrac5SwkIqmKZey/fkOfP8XgfxN7mnRtCUAAMEiySj4XXaRrZTqnvKtUWgItihR17A=
+#   app: nextfantasy
+#   on:
+#     repo: andydurette/nextfantasy
+#     branch: master
