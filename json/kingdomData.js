@@ -217,7 +217,7 @@ export const kingdomData = {
     cultureImage: "content/images/treasure-chest.jpg",
     leaderHeading: "Unclaimed Lands",
     leaderText:
-      "At the worlds end lays dragard the last bastion against the kingdoms, ruled only by the primeval might of dragons and nothing more.",
+      "At  the worlds end lays dragard the last bastion against the kingdoms, ruled only by the primeval might of dragons and nothing more.",
     leaderImage: "content/images/dragard-dragon.jpg",
     description:
       "Long considered by birthplace of the dragons and where likely hides the vast amount of their riches and secrets. Much to scholars dismay few who are foolhardy enough to venture into dragard or the forests neighbouring it are heard from again.",
