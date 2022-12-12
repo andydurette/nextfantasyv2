@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Home</title>
+        <title>Home </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section id="homepage">
