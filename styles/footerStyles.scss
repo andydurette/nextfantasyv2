@@ -1,0 +1,22 @@
+footer{
+  padding:12px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #254441;
+  p{
+    font-size:1rem;
+  }
+  #copyright{
+    margin:0;
+  }
+  #accreditation{
+    margin:0;
+  }
+}
+
+@media all and (max-width : 330px) {
+  footer{
+    flex-direction: column;
+  }
+}

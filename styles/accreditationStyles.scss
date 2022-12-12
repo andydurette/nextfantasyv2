@@ -1,0 +1,13 @@
+#accreditation-box{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  .accreditation{
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

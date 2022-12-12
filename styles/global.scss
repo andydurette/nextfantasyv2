@@ -1,0 +1,21 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+//Overall Styles
+@import "generalStyles.scss";
+
+//Component Specific Styles
+@import "modalStyles.scss";
+
+//Layout styles
+@import "navbarStyles.scss";
+@import "footerStyles.scss";
+
+//Specific page styles
+@import "accreditationStyles.scss";
+@import "battlegridStyles.scss";
+@import "countryStyles.scss";
+@import "countryStyles.scss";
+@import "indexStyles.scss";
+@import "mapStyles.scss";

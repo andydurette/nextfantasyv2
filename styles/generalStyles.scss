@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+title{
+  text-transform: capitalize;
+}
+
+body {
+	background: #212121;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+  font-family: 'Open Sans', sans-serif;
+  p{
+    font-size:1rem;
+	  line-height: 1.2rem;
+  }
+}
+
+#mainContainer{
+  background-image: url("../public/content/images/montage-about.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100%;
+  flex: 1;
+  min-height: calc(100vh - 158px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  > section{
+    min-height:600px;
+    flex: 1;
+  }
+}
+
+.page-content{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  width:75%;
+}
+
+h1 {
+	text-align: center;
+  color: #FFF;
+  margin: 1rem 0 1rem 1rem;
+  padding:20px;
+  font-size:40px;
+  line-height: 50px;
+	}
+
+@media all and (min-width : 768px) {
+  #mainContainer{
+    min-height: calc(100vh - 103px);
+  }
+
+  .page-content{
+    max-width: 700px;
+  }
+}
+
+@media all and (min-width : 1025px) {
+  .page-content{
+    max-width: 800px;
+
+  }
+}
