@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Nextfantasyicon from "../public/content/svg/nextfantasy-large.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const Navbar = () => {
         <div id="logo">
           <Link href="/">
             <span className="nav-link">
-              <img src={Nextfantasyicon} alt="" height="40" />
+              <Image src={Nextfantasyicon} alt="next fantasy" height="40" />
             </span>
           </Link>
         </div>

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import Image from "next/image";
 
 const CountryDetails = (props) => {
   return (
@@ -10,7 +11,7 @@ const CountryDetails = (props) => {
       <div className="item">
         <div className="image">
           <div>
-            <img src={`../${props.historyImage}`} />
+            <Image src={`../${props.historyImage}`} alt={`../${props.alt}`} />
             <span>History</span>
           </div>
         </div>
@@ -24,7 +25,7 @@ const CountryDetails = (props) => {
       <div className="item">
         <div className="image">
           <div>
-            <img src={`../${props.cultureImage}`} />
+            <Image src={`../${props.cultureImage}`} alt={`../${props.alt}`} />
             <span>Culture</span>
           </div>
         </div>
@@ -38,7 +39,7 @@ const CountryDetails = (props) => {
       <div className="item">
         <div className="image">
           <div>
-            <img src={`../${props.leaderImage}`} />
+            <Image src={`../${props.leaderImage}`} alt={`../${props.alt}`} />
             <span>Leader</span>
           </div>
         </div>
