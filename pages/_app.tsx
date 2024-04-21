@@ -9,7 +9,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <div>
       <Layout>
         <AppProvider>
-          <Component {...pageProps} />;
+          <Component {...pageProps} />
         </AppProvider>
       </Layout>
     </div>

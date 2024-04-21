@@ -141,6 +141,14 @@ li > a:only-child:after {
   content: "";
 }
 
+.countries {
+  display: "block";
+  padding: 14px 20px;
+  color: "#fff";
+  font-size: "17px";
+  text-decoration: "none";
+}
+
 /* Media Queries
 --------------------------------------------- */
 
@@ -158,11 +166,25 @@ li > a:only-child:after {
     margin: 0;
   }
 
+  .desktop-countries {
+    display: none;
+  }
+
+  .toggle.countries-mobile {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
   /* Hide the navigation menu by default */
   /* Also hide the  */
   .toggle + a,
   .menu {
     display: none;
+    width: 100%;
+  }
+
+  .countries {
+    padding: 0;
   }
 
   /* Stylinf the toggle lable */

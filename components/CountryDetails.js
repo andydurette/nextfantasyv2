@@ -11,7 +11,12 @@ const CountryDetails = (props) => {
       <div className="item">
         <div className="image">
           <div>
-            <Image src={`../${props.historyImage}`} alt={`../${props.alt}`} />
+            <Image
+              src={`${props.historyImage}`}
+              alt={`${props.alt}`}
+              width="131"
+              height="121"
+            />
             <span>History</span>
           </div>
         </div>
@@ -25,7 +30,12 @@ const CountryDetails = (props) => {
       <div className="item">
         <div className="image">
           <div>
-            <Image src={`../${props.cultureImage}`} alt={`../${props.alt}`} />
+            <Image
+              src={`${props.cultureImage}`}
+              alt={`${props.alt}`}
+              width="131"
+              height="121"
+            />
             <span>Culture</span>
           </div>
         </div>
@@ -39,7 +49,12 @@ const CountryDetails = (props) => {
       <div className="item">
         <div className="image">
           <div>
-            <Image src={`../${props.leaderImage}`} alt={`../${props.alt}`} />
+            <Image
+              src={`${props.leaderImage}`}
+              alt={`${props.alt}`}
+              width="131"
+              height="121"
+            />
             <span>Leader</span>
           </div>
         </div>

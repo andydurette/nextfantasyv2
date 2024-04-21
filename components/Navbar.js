@@ -34,24 +34,14 @@ const Navbar = () => {
               <span className="nav-link">Home</span>
             </Link>
           </li>
-          <li>
-            <Link href="/map">
-              <span className="nav-link">Map</span>
-            </Link>
-          </li>
-          <li
-            style={{
-              display: "block",
-              padding: "14px 20px",
-              color: "#fff",
-              fontSize: "17px",
-              textDecoration: "none",
-            }}
-          >
-            <label htmlFor="drop-1" className="toggle">
+
+          <li className="countries">
+            <label htmlFor="drop-1" className="toggle countries-mobile">
               Countries +
             </label>
-            <span href="#">Countries</span>
+            <span className="desktop-countries" href="#">
+              Countries
+            </span>
             <input type="checkbox" id="drop-1" />
             <ul>
               <li>
@@ -97,10 +87,15 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
+            <Link href="/map">
+              <span className="nav-link">Map</span>
+            </Link>
+          </li>
+          {/* <li>
             <Link href="/battlegrid">
               <span className="nav-link">Battlegrid</span>
             </Link>
-          </li>
+          </li> */}
 
           {/* <li>
 
